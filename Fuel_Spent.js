@@ -12,11 +12,13 @@ rl.on('line', (line) => {
     //--------//
     //--main--//
     //--------//
-    let x = parseInt(input[0][0]);
+    let time = parseInt(input[0][0]);
+    let velocity = parseInt(input[1][0]);
 
     //calculation
-    let distance = x*2;
+    let distance = velocity*time;
+    let spentFuel = distance/12;
 
     //print
-    console.log(`${distance} minutos`);
+    console.log(`${spentFuel.toFixed(3)}`);
 });
