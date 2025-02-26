@@ -13,7 +13,7 @@ rl.on('line', (line) => {
     //--main--//
     //--------//
     let amount = parseInt(input[0][0]);
-    let nextAmount;
+    let noteCount;
 
     //print the original
     console.log(`${amount}`);
